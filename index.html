@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>mk</title>
+</head>
+<body>
+<textarea id="text">
+sdfdfsdf
+
+* dfsdf
+* dfdfd
+
+# test
+    d   fdfd
+## bsd
+df sd sd<a href="test">sfsdfsd</a>hohoh
+    the time is big;
+    omg comes here
+    what's this;
+
+3. abc
+4. efg
+5. sss:wq
+</textarea>
+<textarea id="re" style="width:600px;height:300px"></textarea>
+<script src="markdown.js"></script>
+<script>
+	var txt = document.getElementById('text');
+	var mkt = Markdown.markdown(txt.value);
+	var re = document.getElementById('re');
+	re.value = mkt;
+</script>
+</body>
+</html>
